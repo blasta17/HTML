@@ -1,0 +1,7 @@
+HTML NOTES :
+
+<b>  </b>    =// Met l'écriture en (Bold)
+<h1> </h1>   =// Va jusqu'a h6 maximum ou h1 est le plus gros (Titre)
+<br/>        =// (return) 
+
+La plupart des navigateurs ne se soucient guère que vous tapiez vos balises en majuscules, en minuscules, ou dans un mélange des deux. <HTML>, <html> ou <HtMl> donneront normalement le même résultat. Quoi qu'il en soit, la méthode correcte est de taper les balises en minuscules. Donc, prenez l'habitude d'écrire vos balises en minuscules.

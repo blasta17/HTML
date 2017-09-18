@@ -1,0 +1,185 @@
+HTML NOTES :
+
+<b>  </b>    =// Met l'écriture en (Bold)
+<h1> </h1>   =// Va jusqu'a h6 maximum ou h1 est le plus gros (Titre)
+<br/>        =// (return) 
+<img scr=""/>
+<p> </p>     =// pour creer un paragraphe
+<i> </i>     =// Mettre de texte en italique
+<hr />       =// Trace une ligne Horizontale
+<ul> </ul>   =// UnOrdered List (Liste non numéroté)
+<ol> </ol>   =// OrderList List (Liste numéroté)
+<li> </li>   =// Item d'une liste
+<a> </a>     =// Anchor 
+<strong> </strong>  =// Accentue le texte écris
+<em> </em>
+<id> </id>  =// id="nomdel'id"   apres on peut <a href="#nomdel'id"> AnchorLink </a>
+Expl 1 : 
+<table>    =// GRille
+
+    <tr>   =// Ligne 1  de la grille  
+        <th> </th> // Titre  1 de la colonne 1 du tableau
+        <th> </th> // Titre  2 de la colonne 2 du tableau
+    </tr>
+    
+    <tr>   =// Ligne 1  de la grille  
+        <td> </td> // Valeur  1 de la colonne 1 du tableau
+        <td> </td> // Valeur  2 de la colonne 2 du tableau
+    </tr>
+    
+</table>
+Expl 2  : // aVEC DE Marges
+<table border="1">    =// GRille
+
+    <tr width="1" >   =// Ligne 1  de la grille  
+        <th> </th> // Titre  1 de la colonne 1 du tableau
+        <th> </th> // Titre  2 de la colonne 2 du tableau
+    </tr>
+    
+    <tr>   =// Ligne 1  de la grille  
+        <td> </td> // Valeur  1 de la colonne 1 du tableau
+        <td> </td> // Valeur  2 de la colonne 2 du tableau
+    </tr>
+    
+</table>
+Expl 3  : // aVEC DE Marges
+<table border="1">    =// GRille
+
+    <tr colspan="3" align="center">   =// Ligne 1  de la grille  
+        <th> </th> // Titre  1 de la colonne 1 du tableau
+        <th> </th> // Titre  2 de la colonne 2 du tableau
+    </tr>
+    
+    <tr>   =// Ligne 1  de la grille  
+        <td> </td> // Valeur  1 de la colonne 1 du tableau
+        <td> </td> // Valeur  2 de la colonne 2 du tableau
+    </tr>
+    
+</table>
+Expl 3  : // aVEC DE Marges
+<table border="1">    =// GRille
+
+    <thead>   =// Ligne 1  de la grille  
+        <tr>
+            <th> </th> // Titre  1 de la colonne 1 du tableau
+            <th> </th> // Titre  2 de la colonne 2 du tableau
+        </tr>
+    </thead>
+    <tbody>   =// Ligne 1  de la grille  
+        <tr>
+            <td> </td> // Titre  1 de la colonne 1 du tableau
+            <td> </td> // Titre  2 de la colonne 2 du tableau
+        </tr>
+    <tbody>
+    <tfoot>   =// Ligne 1  de la grille  
+        <th> </th> // Valeur  1 de la colonne 1 du tableau  ou  //=td
+        <th> </th> // Valeur  2 de la colonne 2 du tableau  ou  //=td
+    </tfoot>
+    
+</table>
+
+La plupart des navigateurs ne se soucient guère que vous tapiez vos balises en majuscules, en minuscules, ou dans un mélange des deux. <HTML>, <html> ou <HtMl> donneront normalement le même résultat. Quoi qu'il en soit, la méthode correcte est de taper les balises en minuscules. Donc, prenez l'habitude d'écrire vos balises en minuscuàles.
+
+
+Page de base : 
+
+<html>
+
+    <head>
+    <title> </title> // Toujours dans le head
+    </head>
+    
+    <body>
+       <!-- Tout ce qui s'affiche dans une page est dans le body  -->
+    </body>
+    
+</html>
+
+
+***************
+
+!!!!!!!!!1  évitez le chevauchement des éléments. !!!!!!!!!!!!
+
+Erreur !!!!!!!
+<b><i>Un texte en caractères gras et en italique</b></i>
+
+BON !!!!!!!!!!
+<b><i>Un texte en caractères gras et en italique</i></b>
+
+***********
+
+Exemple 1  :  Retour Chariot dans une ligne
+
+    Du texte<br /> et encore dans une nouvelle ligne
+    Dans le navigateur, cela donne :
+    Du texte
+    et encore dans une nouvelle ligne 
+**************************
+
+Exemple  2 : Liste non numéroté
+
+    <ul>
+	  <li>Un élément de liste</li>
+	  <li>Un autre élément de liste</li>
+	</ul>
+	
+***************************
+
+Exemple 3 : Liste numéroté 
+
+	<ol>
+	  <li>Premier élément de liste</li>
+	  <li>Second élément de liste</li>
+	</ol>
+	
+****************************
+
+Les Liens :  
+ Exemple : 
+  href  = HyperLink Reference
+ <a href="http://www.html.net/">Voici un lien vers HTML.net</a>
+ 
+ **Et pour les liens entre mes propres pages ? Si vous voulez faire un lien entre des pages sur le même site, il n'est pas nécessaire d'écrire l'adresse (URL) entière du document. Par exemple, si vous avez deux pages (appelons-les page1.htm et page2.htm) enregistrées dans le même dossier, vous pouvez faire un lien d'une page à l'autre simplement en inscrivant le nom du fichier dans le lien. Dans ces conditions, un lien de page1.htm vers page2.htm apparaîtrait comme ceci :
+ 
+ Exemple4 : Les Liens
+        <a href="page2.htm">Cliquez ici pour aller à la page 2</a>
+        
+*******************
+
+Creation de Grille
+
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>           // = 
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+https://www.w3schools.com/tags/tag_tr.asp
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test
+
++++++++++++++++++++++++++++++++++++++++++++
+
+
+<img src="DestinationdeLaSource">
